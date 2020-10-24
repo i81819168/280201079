@@ -1,0 +1,11 @@
+leaving_time=6.52
+easy_duration=8
+tempo_duration=6
+easy_mile1=1
+easy_mile2=2
+tempo_mile=3
+total_easy_duration=easy_duration*(easy_mile1+easy_mile2)
+total_tempo_duration=tempo_duration*tempo_mile
+total_duration=total_easy_duration+total_tempo_duration
+arriving_time=leaving_time+total_duration/60
+print(arriving_time)
