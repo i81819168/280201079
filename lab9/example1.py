@@ -1,9 +1,7 @@
 def harmonic_sum(a):
-  if a != 0:
-    sum = 0
-    for i in range(1, a+1):
-      sum += 1/i
-  return sum
+  if a == 1:
+    return 1
+  return 1/a + harmonic_sum(a-1)
 
 a = 5
 print(harmonic_sum(a))
